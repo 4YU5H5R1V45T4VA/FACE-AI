@@ -1,0 +1,22 @@
+import mysql.connector
+ 
+# connecting to the database
+dataBase = mysql.connector.connect(
+                     host = "localhost",
+                     user = "user",
+                     passwd = "faceAI",
+                     database = "face AI" ) 
+ 
+# preparing a cursor object
+cursorObject = dataBase.cursor()
+ 
+# creating table 
+studentRecord = """CREATE TABLE CUSTOMER (
+                   
+                   )"""
+ 
+# table created
+cursorObject.execute(studentRecord) 
+ 
+# disconnecting from server
+dataBase.close()
